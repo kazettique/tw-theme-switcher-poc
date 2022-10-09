@@ -2,7 +2,7 @@
   "name": "tw-theme-switcher-poc",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "homepage": "https://kazettique.github.io/tw-theme-switcher-poc",
   "scripts": {
     "start": "craco start",
     "build": "CI=false && craco build",
