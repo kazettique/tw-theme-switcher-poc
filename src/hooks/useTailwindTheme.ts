@@ -3,6 +3,9 @@ import { ThemeItem } from '@/types';
 import { genCSSString } from '@/utils';
 import { useEffect } from 'react';
 
+// References
+// https://stackoverflow.com/questions/524696/how-to-create-a-style-tag-with-javascript
+// https://stackoverflow.com/questions/574944/how-to-load-up-css-files-using-javascript
 export default function useTailwindTheme(currentTheme: ThemeItem): void {
   useEffect(() => {
     if (!document.getElementById(CUSTOM_THEME_ID)) {
