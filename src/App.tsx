@@ -16,7 +16,12 @@ function App() {
       <div className="text-neutral-200 text-2xl font-bold text-center">Theme of Evangelions</div>
       <div className="m-4 flex justify-center">
         {themeList.map((themeItem) => (
-          <Button themeItem={themeItem} onClick={handleThemeChange} active={themeItem.name === currentTheme.name} />
+          <Button
+            key={themeItem.name}
+            themeItem={themeItem}
+            onClick={handleThemeChange}
+            active={themeItem.name === currentTheme.name}
+          />
         ))}
       </div>
       <Palette currentTheme={currentTheme} />
